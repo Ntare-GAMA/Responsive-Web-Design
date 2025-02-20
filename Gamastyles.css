@@ -1,0 +1,325 @@
+/* Updated Gamastyles.css */
+
+.meet-the-artists {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FFDAB9; /* Light-orange */
+    position: relative;
+    z-index: 2;
+}
+
+.artists-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.artist {
+    background: #e46110;
+    border: 3px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+    height: 350px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.artist img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.artist-info {
+    margin-top: 10px;
+}
+
+.artist h3 {
+    font-size: 1.5em;
+    color: #222;
+    text-align: left;
+}
+
+.artist p {
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.artist .social-icons a {
+    margin: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.artist .social-icons a:hover {
+    color: #090a0b;
+}
+
+.artist:hover {
+    transform: scale(1.08);
+    border-color: #000;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.rap-houdini {
+    background-color: #13ea8c;
+    border: 3px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+    height: 350px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rap-houdini video {
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;  /* Ensures the video takes the full width of its container */
+    height: 100%; /* Ensures it takes full height */
+    object-fit: cover; /* Ensures it fills without distortion */
+    border-radius: 10px; /* Matches the design of the image thumbnails */
+}
+
+#volume-control {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#about {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.about-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 50px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.experience-section {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.experience-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1280;
+        height: 720; /* aspect ratio */
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: -1;
+    }
+
+.experience-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6); /* Optional: Add a dark overlay for readability */
+    padding: 30px;
+    border-radius: 10px;
+}
+.video-container {
+    width: 100%; /* Ensures it takes full width of the artist box */
+    height: 300px; /* Adjust this as needed */
+    overflow: hidden; /* Prevents video overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-video {
+    width: 100%;  /* Ensures the video takes the full width of its container */
+    height: 100%; /* Ensures it takes full height */
+    object-fit: cover; /* Ensures it fills without distortion */
+    border-radius: 10px; /* Matches the design of the image thumbnails */
+}
+
+.rap-houdini-title {
+    display: none;
+}
+
+.rap-houdini-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2); /* Slight dark overlay */
+}
+
+.rap-houdini-container {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* General styling for cinematic movie-like titles */
+.cinematic-title {
+    font-size: 6rem; /* Large font size */
+    font-weight: 900; /* Extra bold for impact */
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px; /* More spacing for a dramatic effect */
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+/* Adding a glowing neon effect */
+.cinematic-title:hover {
+    text-shadow: 0px 0px 30px rgba(255, 69, 0, 1), 0px 0px 60px rgba(255, 0, 0, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+/* Cinematic underline effect */
+.cinematic-title::after {
+    content: "";
+    width: 120px;
+    height: 6px;
+    background: linear-gradient(to right, #ff4500, #ffcc00);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/* Special effect for RELEASES title */
+.releases-title {
+    font-size: 6.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #fefeff, hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 20px #f8a50ab3;
+    animation: flicker 2s infinite alternate;
+}
+
+/* Flickering effect for a cinematic neon glow */
+@keyframes flicker {
+    0% { opacity: 1; text-shadow: 0px 0px 10px rgb(255, 255, 255); }
+    50% { opacity: 0.8; text-shadow: 0px 0px 30px #040404c4; }
+    100% { opacity: 1; text-shadow: 0px 0px 15px rgba(46, 241, 28, 0.8); }
+}
+
+/* Make the Project Titles Look More Cinematic */
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #E50914;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background: #444;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
